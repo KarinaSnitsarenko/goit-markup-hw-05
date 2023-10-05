@@ -387,17 +387,18 @@
         </div>
         </div>
         <div class="footer-input">
-             <label for="footer-email" class="label-footer">Subscribe</label>
-                <input type="email" class="input-footer-class" name="footer-email" id="footer-email" placeholder="Email"/>
-                <div class="div-footer-btn">
+            <p class="p-footer">Subscribe</p>
+            <form class="footer-form">
+             <label class="label-footer"></label>
+                <input type="email" class="input-footer-class" name="footer-email" placeholder="Email"/>
                 <button type="submit" class="footer-btn">Subscribe</button>
                 <svg class="footer-btn-icon">
                     <use href="./images/icons.svg#icon-aeroplane-icon" width="24" height="24"></use>
                 </svg>
-                </div>
+            </form>    
         </div>
     </footer>
-    <div class="backdrop">
+    <div class="backdrop is-open">
         <div class="modal">
             <button class="modal-btn" type="button">
                 <svg class="modal-btn-icon">
@@ -435,14 +436,19 @@
                    </svg>
                    </div>
                 </div>
-                <div  class="madal-field">
-                   <label for="comment" class="label-modal">Comment</label>
-                   <textarea  name="comment" id="comment" class="modal-textarea" placeholder="Text input"></textarea>
+                <div  class="madal-check">
+                   <label for="user-comment" class="label-modal">Comment</label>
+                   <textarea  name="user-comment" id="user-comment" class="modal-textarea" placeholder="Text input"></textarea>
                 </div>
-                <div class="madal-field">
-                   <label class="label-modal input-checkbox">
-                   <input type="checkbox" name="consept" value="I accept the terms and conditions of the Privacy Policy"/>
-                I accept the terms and conditions of the <span class="text-chetbox">Privacy Policy</span>
+                <div class="madal-checkbox">
+                   <input type="checkbox" class="user-privacy visually-hidden" id="user-privacy" name="user-privacy" value="true"/>
+                   <label class="label-modal input-checkbox" for="user-privacy">I accept the terms and conditions of the 
+                    <span class="icoon-chetbox">
+                        <svg>
+                            <use href="./images/icons.svg#icon-kub" width="10" height="8"></use>
+                        </svg>
+                    </span>
+                <a href="" class="checkbox-link">Privacy Policy</a>
                 </label>
                 </div>
                 <button type="submit" class="form-btn">Send</button>
