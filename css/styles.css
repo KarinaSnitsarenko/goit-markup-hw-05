@@ -476,7 +476,6 @@ transform: translateY(0);
 .foot-container{
     display: flex;
     align-items: baseline;
-
 }
 
 .foot-container-one{
@@ -553,14 +552,13 @@ transform: translateY(0);
 
  /**============================*/
 .footer-input{
- display: inline-block;
-
+display: inline-block;
+margin-left: 80px;
 }
 
 .footer-form{
 display: flex;
-
-position: relative;
+gap: 24px;
 }
 
 .p-footer{
@@ -627,12 +625,10 @@ position: relative;
 }
 
 .footer-btn-icon{
-    position: absolute;
     width: 24px;
     height: 24px;
     margin-left: 16px;
     top: 50%;
-    transform: translateY(-50%);
 }
 
 /**============================*/
@@ -848,8 +844,7 @@ position: relative;
 
 }
 
-.input-checkbox:checked 
-+ .icoon-chetbox{
+.user-privacy:checked + .icoon-chetbox .icoon-chetbox{
     background-color:#404bbf;
     border: none;
     fill:#F4F4FD;
@@ -875,16 +870,13 @@ position: relative;
 
 .checkbox-link{
     color: #4d5ae5;
+    text-decoration-line: underline;
 }
 
 .input-svg{
     position: relative;
 }
 
-svg{
-    width: 8px;
-    height: 8px;
-}
 
 .modal-icon{
  position: absolute;

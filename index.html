@@ -341,7 +341,6 @@
     </main>
     <!---Підвал-->
     <footer class="foot-style">
-        <div>
         <div class="container foot-container">
             <div class="foot-container-one">
         <a class="logo footer-loogo" href="./index.html">Web<span class="foot-logo">Studio</span></a>
@@ -386,19 +385,21 @@
                         </li>
             </ul>
         </div>
-        </div>
+        
         <div class="footer-input">
             <p class="p-footer">Subscribe</p>
             <form class="footer-form">
-             <label class="label-footer"></label>
+             <label class="label-footer">
                 <input type="email" class="input-footer-class" name="footer-email" placeholder="Email"/>
-                <button type="submit" class="footer-btn">Subscribe</button>
+                </label>
+                <button type="submit" class="footer-btn">Subscribe
                 <svg class="footer-btn-icon">
                     <use href="./images/icons.svg#icon-aeroplane-icon" width="24" height="24"></use>
                 </svg>
-            </form>    
+                </button>
+            </form>   
+            </div> 
         </div>
-    </div>
     </footer>
     <div class="backdrop is-open">
         <div class="modal">
@@ -443,13 +444,14 @@
                    <textarea  name="user-comment" id="user-comment" class="modal-textarea" placeholder="Text input"></textarea>
                 </div>
                 <div class="madal-checkbox">
-                   <input type="checkbox" class="user-privacy visually-hidden" id="user-privacy" name="user-privacy" value="true"/>
-                   <label class="label-modal input-checkbox" for="user-privacy">I accept the terms and conditions of the 
+                    <input type="checkbox" class="user-privacy visually-hidden" id="user-privacy" name="user-privacy" value="true"/>
+                   <label class="label-modal input-checkbox" for="user-privacy">
                     <span class="icoon-chetbox">
                         <svg class="kubik" width="8" height="8">
                             <use href="./images/icons.svg#icon-kub" width="10" height="8"></use>
                         </svg>
                     </span>
+                    I accept the terms and conditions of the 
                 <a href="" class="checkbox-link">Privacy Policy</a>
                 </label>
                 </div>
