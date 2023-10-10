@@ -691,6 +691,7 @@ gap: 24px;
 .modal-btn:hover{
     background-color: #404bbf;
     border: none;
+    fill: #ffffff;
     box-shadow: 0px 1px 1px 0px rgba(46, 47, 66, 0.16),
             0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
@@ -698,16 +699,12 @@ gap: 24px;
 .modal-btn:focus {
     background-color: #404bbf;
     border: none;
+    fill: #ffffff;
 }
 
  .modal-btn-icon{
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
-
-.modal-btn-icon:hover .modal-btn {
-    fill: #ffffff;
-}
-
 
 
 .modal-title{
