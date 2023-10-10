@@ -699,8 +699,6 @@ gap: 24px;
 .modal-btn:focus {
     background-color: #404bbf;
     border: none;
-    box-shadow: 0px 1px 1px 0px rgba(46, 47, 66, 0.16),
-        0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
  .modal-btn-icon{
@@ -714,11 +712,15 @@ gap: 24px;
  }
 
  .modal-btn-icon:hover{
-    fill: #ffffff
+    fill: #ffffff;
  }
 
 .modal-btn-icon:focus {
-    fill: #ffffff
+    fill: #ffffff;
+}
+
+.modal-btn:hover .modal-btn-icon{
+    fill: #ffffff;
 }
 
 .modal-title{
@@ -745,7 +747,6 @@ gap: 24px;
     border-radius: 4px;
     border: 1px solid var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.40));
     background-color: transparent;
-    margin-top: 4px;
     margin-bottom: 4px;
     padding-left: 38px;
     outline: transparent;
@@ -832,7 +833,7 @@ gap: 24px;
     font-weight: 400;
     line-height: 1.17;
     letter-spacing: 0.04em;
-    
+    margin-bottom: 4px;
 }
 
 
