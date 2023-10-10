@@ -704,17 +704,11 @@ gap: 24px;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
 
- .modal-btn-icon:hover{
-    fill: #ffffff;
- }
-
-.modal-btn-icon:focus {
+.modal-btn-icon:hover .modal-btn {
     fill: #ffffff;
 }
 
-.modal-btn:hover .modal-btn-icon{
-    fill: #ffffff;
-}
+
 
 .modal-title{
     font-weight: 500;
@@ -880,3 +874,10 @@ gap: 24px;
 transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.modal-btn-icon:hover{
+    fill: #ffffff;
+}
+
+.modal-btn-icon:focus {
+    fill: #ffffff;
+}
