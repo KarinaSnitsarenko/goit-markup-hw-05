@@ -645,8 +645,7 @@ transform: translateY(0);
 }
 
 .foot-container-one{
-    display: flex;
-    justify-content: center;
+    text-align: center;
     margin-bottom: 72px;
 }
 .foot-logo{
@@ -674,6 +673,7 @@ transform: translateY(0);
     color: #F4F4FD;
     min-width: 288px;
     margin-top: 17px;
+    text-align: left;
 }
 
 
@@ -728,25 +728,32 @@ transform: translateY(0);
  }
 
  /**============================*/
-.footer-input{
 
+ .footer-input{
+     display: flex;
+     flex-direction: column;
 }
 
 .footer-form{
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .p-footer{
     color: var(--WHITE, #FFF);
     font-family: Roboto;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 500; 
     line-height: 1.5;
     letter-spacing: 0.02em;
     margin-bottom: 16px;
+    text-align: center;
 }
 
-
+.label-footer{
+    display: inline-flex;
+}
 
 .input-footer-class{
     width: 264px;
@@ -777,7 +784,7 @@ transform: translateY(0);
 
 
 .footer-btn{
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
     padding: 8px 24px;
@@ -1120,21 +1127,44 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     .footer-input {
 
     }
+    .footer-form{
+        flex-direction: row;
+        gap: 24px;
+        
+    }
+    .p-footer{
+        text-align: left;
+    }
     .foot-container {
         display: flex;
         flex-wrap: wrap;
         row-gap: 72px;
         column-gap: 24px;
     }
-    
+    .container.foot-container {
+        min-width: 584px;
+    }
     .foot-container-one {
         display: block;
+        margin-bottom: 0;
+        text-align: left;
+    }
+    /* .foot-container-two{
+        text-align: left;
+    } */
+    .foot-text-two{
+        text-align: left;
+    }
+          
+    .input-footer-class{
+        margin-bottom: 0;
     }
     
     .team-icon-foot {
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-bottom: 0;
     }
     .modal {
         width: 408px;
@@ -1228,10 +1258,11 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
         width: calc((100% - 48px) / 3);
     }
 
-
     .foot-container {
         display: flex;
         align-items: baseline;
+        row-gap: 0;
+        column-gap: 0;
     }
     .foot-container-one {
         display: block;
@@ -1242,21 +1273,25 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
         justify-content: center;
         align-items: center; 
     }
+    .foot-container-two{
+        margin-right: 80px;
+    }
     .footer-input {
-        display: inline-block;
-        margin-left: 80px;
+        display: flex;
+        flex-direction: column;
+    }
+    .label-footer{
+        display: inline-flex;
+     
     }
     .foot-text {
-        max-width: 264px;
+        min-width: 264px;
     }
     .foot-text-two{
        text-align: start;
     }
     .footer-form {
-        display: block;
-        gap: 24px;
-    }
-    .label-footer {
+        display: flex;
         gap: 24px;
     }
     .team-icon-foot{
